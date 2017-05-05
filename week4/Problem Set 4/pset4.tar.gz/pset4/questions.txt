@@ -1,0 +1,23 @@
+0.  GIF supports 256 colours (8 bits)
+    JPEG supports around 16 million colours (24 bits)
+    PNG supports around 16 million colours (24 bits)
+    BMP supports 4 trillion colours (32 bits)
+1.  GIF format supports animation.
+2.  Lossy compression compresses a file by permanently eliminating certain information. When the file is uncompressed, the file doesn't return back to the original state. The data lost is permanently lost.
+    In Lossless compression, some algorith is used to compress a file so that when the file is uncompressed, it retains its original form. No data is lost.
+3.  JPEG format is always lossy compressed.
+4.  When a file is deleted in a FAT file system, the systems modifies the filename's first character in the file's directory entry indicating that the file is deleted and then moves all the file's clusters to the hard drive's free clusters. So, the actual file data is not touched and can be easily recovered. 
+5.  I would overwrite all the addressable locations with a random character so many times that it becomes hard to retrieve any useful information.
+6.  stdint.h is a header file in C standard library to allow programmers to write more portable code by providing typedefs which provide exact-width integer types along with the allowed minimum and maximum values for each type.
+7.  It is of great importance when integer data of fixed widths, specific locations and exact alignments are to be used.
+8.  BYTE is 8-bits, DWORD is 32-bits, LONG is 32-bits and WORD is 16-bits long.
+9.  The first two bytes of a BMP file is the header field used to identify BMP file which is BM in ASCII and 0x42 0x4D in Hexadecimal.
+10. bfsize is the size, in bytes, of the bitmap file and bisize is the number of bites required bitmap image (no headers).
+11. Negative biheight means that the bitmap is top-down DIB with origin at the upper left corner.
+12. the biBitCount specifies the BMP's colour depth.
+13. fopen might return NULL if it is unable to open outfile for writing due to memory constraints.
+14. The thrid argument in fread is always 1 because it is reading 1 byte at a time and then copying it to the specified location.
+15. if bi.biWidth is 3 then padding will also be 3 bytes.
+16. fseek function is used to move to a specific location in file. Here, it skips all the padding and moves to the next pixel. 
+17. SEEK_CUR is an integer which when used in place of whence argument in fseek functions specifies that the offset provided is relative to the current file location.
+18. The person in the picture is Rick Astley.

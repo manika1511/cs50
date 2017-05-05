@@ -1,0 +1,12 @@
+0.  it is the longest word in dictionary large
+1.  Getrusage returns information about all the resources used by the current thread. There is a structure of detailed information returned by the function. An example: is the total time spent executing the processes. It can be used to benchmark performance.
+2.  The struct has 16 members.
+3.  This is because C requires passing structs by reference in functions, because by value, the size would be too big 
+4.  Speller.c reads words from the file, character by character, using a for loop to begin reading the first character of the file, incrementing by one character until it reaches the end of the file. If the character is a letter or apostrophe, it is added to a word. If the word becomes larger than what we have defined as the largest word possible, the word is
+    ignored. If the word has a digit, it is ignored as well. If a word still exists, it is counted, checked for spelling, and printed. The amount of time it takes to complete the checking is logged in.
+5.  Fgetc provides much more control over what characters are allowed to filter through to the constituted string. Usin a string by string reading function, such as fscanf would introduce problems where the string may contain undesirable characters. Fgetc is probably a safer and simpler way to process the stream.
+6.  The parameters passed to load and check are declared using const because they are not allowed to change. This helps the program deal with these paramteres with optimum efficiency.
+7.  I used a trie. My node is constituted by an array of pointers that represent the chars a to z plus an apostrophe. The node also has a word boolean that helps determine the ends of a character sequence that makes up a word.
+8.  It took a little while to get it work. It runs at 0.17ms. Trying to improve it further.
+9.  I made few changes to reduce the loops
+10. I can modify the code to make it run faster.
